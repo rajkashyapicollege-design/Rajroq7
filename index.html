@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raj Kashyapi | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --bg: #f0f4f8;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --accent: #2563eb;
+            --border: #cbd5e1;
+            --soft: #f8fafc;
+        }
+
+        body.dark {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+            --muted: #cbd5e1;
+            --accent: #60a5fa;
+            --border: #475569;
+            --soft: #263449;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 15px 20px;
+            background: var(--card);
+            border-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .logo {
+            color: var(--accent);
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px 10px 35px;
+        }
+
+        .hero h1 {
+            color: var(--accent);
+            font-size: 38px;
+            margin-bottom: 5px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .profile-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: var(--card);
+            border-radius: 22px;
+            box-shadow: 0 5px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-card h2 {
+            color: var(--accent);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+            margin-top: 26px;
+        }
+
+        .profile-card h2:first-child {
+            margin-top: 0;
+        }
+
+        .profile-card p {
+            font-size: 16px;
+        }
+
+        .skills, .goals {
+            padding: 15px 18px;
+            margin: 20px 0;
+            background: var(--soft);
+            border-radius: 12px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .email {
+            color: var(--accent);
+            overflow-wrap: anywhere;
+        }
+
+        .contact-button, .theme-button {
+            display: inline-block;
+            padding: 11px 20px;
+            border: none;
+            border-radius: 9px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-button:hover, .theme-button:hover {
+            opacity: 0.85;
+        }
+
+        .theme-area {
+            text-align: center;
+            margin: 25px 0 10px;
+        }
+
+        footer {
+            max-width: 600px;
+            margin: 25px auto 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 14px 10px;
+            }
+
+            .navbar {
+                justify-content: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .profile-card {
+                padding: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a class="logo" href="#">Raj.</a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hi, I'm Raj Kashyapi</h1>
+        <p>Computer Science Student | Aspiring Web Developer</p>
+    </header>
+
+    <main>
+        <section class="profile-card">
+
+            <!-- About -->
+            <h2 id="about">About Me</h2>
+
+            <p>
+                Hello! I'm Raj Kashyapi, a first-year
+                Computer Science student learning web development.
+            </p>
+
+            <p>
+                My goal is to create useful, attractive websites
+                and help businesses grow online.
+            </p>
+
+            <!-- Skills -->
+            <div class="skills" id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Problem Solving</li>
+                    <li>Learning JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Goals -->
+            <div class="goals" id="goals">
+                <h2>My Goals</h2>
+                <ol>
+                    <li>Master HTML and CSS</li>
+                    <li>Build 3 professional websites</li>
+                    <li>Create my portfolio</li>
+                    <li>Find my first client</li>
+                </ol>
+            </div>
+
+            <!-- Contact -->
+            <h2 id="contact">Contact Me</h2>
+
+            <p>
+                Email:
+                <a class="email"
+                   href="mailto:kashyapiraj57@gmail.com">
+                    kashyapiraj57@gmail.com
+                </a>
+            </p>
+
+            <a class="contact-button"
+               href="mailto:kashyapiraj57@gmail.com?subject=Website%20Enquiry">
+                Contact Raj
+            </a>
+
+        </section>
+
+        <!-- Dark Mode -->
+        <div class="theme-area">
+            <button class="theme-button" id="themeToggle"
+                    type="button" aria-pressed="false">
+                🌙 Enable Dark Mode
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Raj Kashyapi | Personal Portfolio</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        const themeButton = document.getElementById("themeToggle");
+
+        themeButton.addEventListener("click", function () {
+            const isDark = document.body.classList.toggle("dark");
+
+            themeButton.textContent = isDark
+                ? "☀️ Enable Light Mode"
+                : "🌙 Enable Dark Mode";
+
+            themeButton.setAttribute("aria-pressed", isDark);
+        });
+    </script>
+
+</body>
+</html>
